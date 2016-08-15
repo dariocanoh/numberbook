@@ -19,12 +19,6 @@
 -- 	 Copyright 2014-2015, John McNamara <jmcnamara@cpan.org>
 --   https://github.com/jmcnamara/xlsxwriter.lua
 --  
---- - DEPENDENCIES : 
----		
----		zipwriter 0.1.5-1  (in luarocks)
----		lua-zlib  0.4-1	   (in luarocks)
----		struct 1.4-1 
---- 
 
 -- load required libraries
 local check = lide.core.base.check
