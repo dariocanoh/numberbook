@@ -1,6 +1,3 @@
-.. // Required values for html docs visualization
-
-.. include:: docs/ids.rst
 
 Para poder funcionar, ésta libreria requiere tener instalado el `framework Lide <http://github.com/lidesdk/framework>`_ 
 en su máquina.
@@ -46,3 +43,5 @@ Licencia
 ========
 
 The MIT/X11 License.
+
+.. include:: docs/ids.rst
