@@ -9,11 +9,10 @@ Esta clase permite escribir archivos xlsx utilizando el framework Lide.
 
 .. code-block: lua
 	
-	numberbook = require 'numberbook'
-
-	book = numberbook : new { Name = 'book', Filename = 'test.xlsx'}
-	book:writeText ('A1', 'Hola mundo')
-	book:close()
+ numberbook = require 'numberbook'
+ book = numberbook : new { Name = 'book', Filename = 'test.xlsx'}
+ book:writeText ('A1', 'Hola mundo')
+ book:close()
 
 
 
