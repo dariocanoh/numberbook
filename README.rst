@@ -1,12 +1,11 @@
-.. _Numberbook:newFormat: docs/numberbook.rst # numberbooknewformat
-.. _Numberbook:addSheet:  docs/numberbook.rst # numberbookaddsheet
-.. _Numberbook:close:  	  docs/numberbook.rst # numberbookclose
-.. _Numberbook:getCobj:   docs/numberbook.rst # numberbookgetcobj
+.. // Required values for html docs visualization
+.. include:: docs/ids.rst
 
 Para poder funcionar, ésta libreria requiere tener instalado el `framework Lide <http://github.com/lidesdk/framework>`_ 
 en su máquina.
 
-Esta libreria está basada en `xlsxwriter.lua <https://github.com/jmcnamara/xlsxwriter.lua>`_ , todos los creditos su autor.
+Esta libreria está basada en `xlsxwriter.lua <https://github.com/jmcnamara/xlsxwriter.lua>`_ , todos los creditos a su autor.
+
 
 
 Numberbook
@@ -23,6 +22,8 @@ Constructor de libros de cálculo desde Lua.
  Numberbook:getCobj_ 	  Obtiene el objeto real
 =======================  =================================================================================
 
+
+
 Numbersheet
 ===========
 
@@ -37,6 +38,8 @@ Clase auxiliar que representa una hoja del libro.
  Numbersheet:mergeCells_     Combina las celdas
  Numbersheet:getCobj_ 	     Obtiene el objeto real
 ==========================  ===============================================================================
+
+
 
 Licencia
 ========
