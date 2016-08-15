@@ -3,9 +3,9 @@
 --
 -- Copyright 2014-2015, John McNamara, jmcnamara@cpan.org
 --
-require "xlsxwriter.strict"
+require "numberbook.xlsxwriter.strict"
 
-local Xmlwriter = require "xlsxwriter.xmlwriter"
+local Xmlwriter = require "numberbook.xlsxwriter.xmlwriter"
 
 local schema_root     = "http://schemas.openxmlformats.org"
 local package_schema  = schema_root .. "/package/2006/relationships"

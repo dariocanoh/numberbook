@@ -3,14 +3,14 @@
 --
 -- Copyright 2014-2015, John McNamara, jmcnamara@cpan.org
 --
-require "xlsxwriter.strict"
+require "numberbook.xlsxwriter.strict"
 
-local Xmlwriter     = require "xlsxwriter.xmlwriter"
-local Worksheet     = require "xlsxwriter.worksheet"
-local Format        = require "xlsxwriter.format"
-local Packager      = require "xlsxwriter.packager"
-local SharedStrings = require "xlsxwriter.sharedstrings"
-local Utility       = require "xlsxwriter.utility"
+local Xmlwriter     = require "numberbook.xlsxwriter.xmlwriter"
+local Worksheet     = require "numberbook.xlsxwriter.worksheet"
+local Format        = require "numberbook.xlsxwriter.format"
+local Packager      = require "numberbook.xlsxwriter.packager"
+local SharedStrings = require "numberbook.xlsxwriter.sharedstrings"
+local Utility       = require "numberbook.xlsxwriter.utility"
 
 ------------------------------------------------------------------------------
 --

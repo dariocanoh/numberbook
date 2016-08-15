@@ -39,15 +39,15 @@
 --
 -- Copyright 2014-2015, John McNamara, jmcnamara@cpan.org
 --
-require "xlsxwriter.strict"
+require "numberbook.xlsxwriter.strict"
 
-local ZipWriter     = require "ZipWriter"
-local App           = require "xlsxwriter.app"
-local Core          = require "xlsxwriter.core"
-local ContentTypes  = require "xlsxwriter.contenttypes"
-local Styles        = require "xlsxwriter.styles"
-local Theme         = require "xlsxwriter.theme"
-local Relationships = require "xlsxwriter.relationships"
+local ZipWriter     = require "numberbook.deps.ZipWriter"
+local App           = require "numberbook.xlsxwriter.app"
+local Core          = require "numberbook.xlsxwriter.core"
+local ContentTypes  = require "numberbook.xlsxwriter.contenttypes"
+local Styles        = require "numberbook.xlsxwriter.styles"
+local Theme         = require "numberbook.xlsxwriter.theme"
+local Relationships = require "numberbook.xlsxwriter.relationships"
 
 ------------------------------------------------------------------------------
 --

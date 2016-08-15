@@ -3,10 +3,10 @@
 --
 -- Copyright 2014-2015, John McNamara, jmcnamara@cpan.org
 --
-require "xlsxwriter.strict"
+require "numberbook.xlsxwriter.strict"
 
-local Utility   = require "xlsxwriter.utility"
-local Xmlwriter = require "xlsxwriter.xmlwriter"
+local Utility   = require "numberbook.xlsxwriter.utility"
+local Xmlwriter = require "numberbook.xlsxwriter.xmlwriter"
 
 
 local xl_rowmax = 1048576
