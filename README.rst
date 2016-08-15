@@ -1,5 +1,5 @@
 .. // Required values for html docs visualization
-.. include:: docs/ids.rst
+.. include:: ids.rst
 
 Para poder funcionar, ésta libreria requiere tener instalado el `framework Lide <http://github.com/lidesdk/framework>`_ 
 en su máquina.
