@@ -12,7 +12,7 @@ Constructor
 
 .. code-block:: lua
 
- object Numberbook:new ( object objBook, string strName, number nID )
+ object Numbersheet:new ( object objBook, string strName, number nID )
 
 
 Argumentos
@@ -35,68 +35,68 @@ Metodos de la clase
 -------------------
 ----------------------------------------------------------------------------------------------------
 
-Numberbook:writeText
+Numbersheet:writeText
 ^^^^^^^^^^^^^^^^^^^^
    
    Escribir un texto en la celda especificada.
 
 ==========  ========================================================================================
-  nil_ 		  Numberbook:writeText ( string_ strCell, string_ strText, object_ objFormat )
+  nil_ 		  Numbersheet:writeText ( string_ strCell, string_ strText, object_ objFormat )
 ==========  ========================================================================================
 
 ----------------------------------------------------------------------------------------------------
 
 
-Numberbook:mergeCells
+Numbersheet:mergeCells
 ^^^^^^^^^^^^^^^^^^^
    
    This method allows cells to be merged together so that they act as a single area.
 
    .. code-block:: lua
 
-   		Numberbook:mergeCells('B3:D4', 'Merged Cells', merge_format)
+   		Numbersheet:mergeCells('B3:D4', 'Merged Cells', merge_format)
 
 ==========  ========================================================================================
-  nil_ 		  Numberbook:mergeCells( string_ strCells, string_ strText, object_ oFormat )
+  nil_ 		  Numbersheet:mergeCells( string_ strCells, string_ strText, object_ oFormat )
 ==========  ========================================================================================
 
 ----------------------------------------------------------------------------------------------------
 
 
-Numberbook:setRowHeight
+Numbersheet:setRowHeight
 ^^^^^^^^^^^^^^^^^^^^^^^
    
 	Modifica el tamaño de la fila.
 
 
 ==========  ========================================================================================
-  nil_ 		  Numberbook:setRowHeight( number_ nRow, number_ nHeight )
+  nil_ 		  Numbersheet:setRowHeight( number_ nRow, number_ nHeight )
 ==========  ========================================================================================
 
 ----------------------------------------------------------------------------------------------------
 
 
-Numberbook:setColWidth
+Numbersheet:setColWidth
 ^^^^^^^^^^^^^^^^^^^^^^
    
 	Modifica el tamaño de la columna
 
 
 ==========  ========================================================================================
-  nil_ 		  Numberbook:setColWidth( number_ first_col, number_ last_col, number_ width, object_ format )
+  nil_ 		  Numbersheet:setColWidth( number_ first_col, number_ last_col, number_ width, object_ format )
 ==========  ========================================================================================
 
 ----------------------------------------------------------------------------------------------------
 
 
-Numberbook:getCobj
+Numbersheet:getCobj
 ^^^^^^^^^^^^^^^^^^
    
 	Obtiene el objeto real.
 
 
 ==========  ========================================================================================
-  nil_ 		  Numberbook:setRowHeight( number_ nRow, number_ nHeight )
+  nil_ 		  Numbersheet:setRowHeight( number_ nRow, number_ nHeight )
 ==========  ========================================================================================
 
 ----------------------------------------------------------------------------------------------------
