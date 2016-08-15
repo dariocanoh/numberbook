@@ -1,7 +1,7 @@
 .. /////// 2016/04/05 - Dario Cano [thdkano@gmail.com]
 
 Numbersheet
-==========
+===========
 
 Clase auxiliar que permite escribir hojas dentro de los libros lua.
 
@@ -36,7 +36,7 @@ Metodos de la clase
 ----------------------------------------------------------------------------------------------------
 
 Numbersheet:writeText
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
    
    Escribir un texto en la celda especificada.
 
@@ -48,7 +48,7 @@ Numbersheet:writeText
 
 
 Numbersheet:mergeCells
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
    
    This method allows cells to be merged together so that they act as a single area.
 
@@ -64,7 +64,7 @@ Numbersheet:mergeCells
 
 
 Numbersheet:setRowHeight
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
    
 	Modifica el tamaño de la fila.
 
@@ -77,7 +77,7 @@ Numbersheet:setRowHeight
 
 
 Numbersheet:setColWidth
-^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
    
 	Modifica el tamaño de la columna
 
@@ -90,7 +90,7 @@ Numbersheet:setColWidth
 
 
 Numbersheet:getCobj
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
    
 	Obtiene el objeto real.
 
@@ -98,8 +98,3 @@ Numbersheet:getCobj
 ==========  ========================================================================================
   nil_ 		  Numbersheet:setRowHeight( number_ nRow, number_ nHeight )
 ==========  ========================================================================================
-
-----------------------------------------------------------------------------------------------------
-
-.. // Required values for html docs visualization
-.. include:: ../directives.rst
