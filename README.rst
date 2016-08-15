@@ -1,4 +1,4 @@
-.. _Numberbook:newFormat docs/numberbook # numberbook-newformat
+.. _Numberbook:newFormat: docs/numberbook # numberbook-newformat
 
 Para poder funcionar, ésta libreria requiere tener instalado el `framework Lide <http://github.com/lidesdk/framework>`_ 
 en su máquina.
