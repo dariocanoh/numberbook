@@ -34,8 +34,8 @@ Estos argumentos son recibidos por el constructor de la clase:
 =============  =====================================================================================
   Argumento     Descripcion
 =============  ===================================================================================== 
- Name 		    The object name
- Filename       The object file to save
+ Name 		    Nombre del objeto
+ Filename       El nombre del archivo xlsx
 =============  =====================================================================================
 
 

@@ -1,48 +1,38 @@
 .. /////// 2016/04/05 - Dario Cano [thdkano@gmail.com]
 
-Numberbook
+Numbersheet
 ==========
 
-Esta clase permite escribir archivos xlsx desde Lide.
+Clase auxiliar que permite escribir hojas dentro de los libros lua.
 
-----------------------------------------------------------------------------------------------------
 
 
 Constructor
-***********
-
-La clase Numberbook tiene un constructor complejo:
-
+-----------
 
 .. code-block:: lua
 
- object Numberbook:new { 
- 	string Name, 	number ID,
- 	string Filename,
- }
+ object Numberbook:new ( object objBook, string strName, number nID )
 
 
 Argumentos
 ^^^^^^^^^^
 
-Estos argumentos son recibidos por la clase:
+Estos argumentos son recibidos por el constructor de la clase:
 
 =============  =====================================================================================
   Argumento     Descripcion
-=============  =====================================================================================
- ID 			The object identificator (optional)
- Name 		    The object name
- Filename       The object file to save
+=============  ===================================================================================== 
+ objBook 		El objeto padre, el libro
+ strName        El nombre de la hoja
+ nID			El identificador unico de la hoja
 =============  =====================================================================================
 
 ----------------------------------------------------------------------------------------------------
 
 
 Metodos de la clase
-*******************
-
-Estos metodos son definidos por la clase:
-
+-------------------
 ----------------------------------------------------------------------------------------------------
 
 Numberbook:writeText
@@ -76,6 +66,33 @@ Numberbook:mergeCells
 Numberbook:setRowHeight
 ^^^^^^^^^^^^^^^^^^^^^^^
    
+	Modifica el tamaño de la fila.
+
+
+==========  ========================================================================================
+  nil_ 		  Numberbook:setRowHeight( number_ nRow, number_ nHeight )
+==========  ========================================================================================
+
+----------------------------------------------------------------------------------------------------
+
+
+Numberbook:setColWidth
+^^^^^^^^^^^^^^^^^^^^^^
+   
+	Modifica el tamaño de la columna
+
+
+==========  ========================================================================================
+  nil_ 		  Numberbook:setColWidth( number_ first_col, number_ last_col, number_ width, object_ format )
+==========  ========================================================================================
+
+----------------------------------------------------------------------------------------------------
+
+
+Numberbook:getCobj
+^^^^^^^^^^^^^^^^^^
+   
+	Obtiene el objeto real.
 
 
 ==========  ========================================================================================
