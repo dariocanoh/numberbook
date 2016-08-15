@@ -7,7 +7,7 @@ Esta clase permite escribir archivos xlsx utilizando el framework Lide.
 
 *Ejemplo:*
 
-.. code-block: lua
+.. code-block:: lua
 	
  numberbook = require 'numberbook'
  book = numberbook : new { Name = 'book', Filename = 'test.xlsx'}
