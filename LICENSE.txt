@@ -1,4 +1,4 @@
-Copyright 2014-2015, John McNamara <jmcnamara@cpan.org>
+Copyright 2016, Hernán D. Cano <hdcano@protonmail.com>
 
 The MIT/X11 License.
 

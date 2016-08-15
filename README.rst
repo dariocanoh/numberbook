@@ -1,9 +1,17 @@
-
 Para poder funcionar, ésta libreria requiere tener instalado el `framework Lide <http://github.com/lidesdk/framework>`_ 
 en su máquina.
 
 Esta libreria está basada en `xlsxwriter.lua <https://github.com/jmcnamara/xlsxwriter.lua>`_ , todos los creditos a su autor.
 
+
+Instalación
+===========
+
+.. code-block:: bash
+	
+	$ mkdir lide_app && cd lide_app
+	$ git clone https://github.com/dariocanoh/numberbook.git
+	$ lide -l numberbook main.lua
 
 
 Numberbook
@@ -21,7 +29,6 @@ Constructor de libros de cálculo desde Lua.
 =======================  =================================================================================
 
 
-
 Numbersheet
 ===========
 
@@ -36,7 +43,6 @@ Clase auxiliar que representa una hoja del libro.
  Numbersheet:mergeCells_     Combina las celdas
  Numbersheet:getCobj_ 	     Obtiene el objeto real
 ==========================  ===============================================================================
-
 
 
 Licencia
