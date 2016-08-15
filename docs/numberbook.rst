@@ -5,6 +5,17 @@ Numberbook
 
 Esta clase permite escribir archivos xlsx utilizando el framework Lide.
 
+*Ejemplo:*
+
+.. code-block: lua
+	
+	numberbook = require 'numberbook'
+
+	book = numberbook : new { Name = 'book', Filename = 'test.xlsx'}
+	book:writeText ('A1', 'Hola mundo')
+	book:close()
+
+
 
 Constructor
 -----------
@@ -15,8 +26,7 @@ La clase Numberbook tiene un constructor complejo:
 .. code-block:: lua
 
  object Numberbook:new { 
- 	string Name, 	number ID,
- 	string Filename,
+ 	string Name, 	string Filename,
  }
 
 
