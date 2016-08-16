@@ -10,7 +10,6 @@ Dependencias
 	* lzlib  0.4.1.53-1 
 	* struct 1.4-1
 
-
 Instalación
 ===========
 
