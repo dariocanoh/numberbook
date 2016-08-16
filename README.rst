@@ -4,6 +4,13 @@ en su máquina.
 Esta libreria está basada en `xlsxwriter.lua <https://github.com/jmcnamara/xlsxwriter.lua>`_ , todos los creditos a su autor.
 
 
+Dependencias
+============
+	
+	* lzlib  0.4.1.53-1 
+	* struct 1.4-1
+
+
 Instalación
 ===========
 

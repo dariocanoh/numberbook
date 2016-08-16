@@ -48,7 +48,14 @@
 -- -- as before
 --
 
-local zlib             = package.loadlib ('numberbook/deps/zlib.so', 'luaopen_zlib')()
+local zlib
+
+if lide.platform.getOSName() == 'Linux' then
+   zlib = package.loadlib ('numberbook/deps/zlib.so' , 'luaopen_zlib') ()
+elseif lide.platform.getOSName() == 'Windows' then
+   zlib = package.loadlib ('numberbook/deps/zlib.dll', 'luaopen_zlib') ()
+end
+
 local utils            = require "numberbook.deps.ZipWriter.utils"
 local stream_converter = require "numberbook.deps.ZipWriter.binary_converter"
 local bit              = utils.bit
