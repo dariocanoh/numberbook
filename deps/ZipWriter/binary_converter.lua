@@ -4,7 +4,13 @@ local struct_unpack, struct_pack, struct_size
 if string.pack then
   struct_unpack, struct_pack, struct_size = assert(string.unpack), assert(string.pack)
 else
-  local struct = package.loadlib ("numberbook/deps/struct.so", 'luaopen_struct')()
+   local struct
+   
+   if lide.platform.getOSName() == 'Linux' then
+     struct = package.loadlib ("numberbook/deps/struct.so", 'luaopen_struct')()
+    elseif lide.platform.getOSName() == 'Windows' then
+      struct = package.loadlib ("numberbook/deps/struct.dll", 'luaopen_struct')()
+    end
   struct_unpack, struct_pack, struct_size = assert(struct.unpack), assert(struct.pack), assert(struct.size)
 end
 
