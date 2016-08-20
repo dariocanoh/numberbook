@@ -21,7 +21,7 @@
 --  
 
 -- load required libraries
-local check = lide.core.base.check
+local check 	 = lide.core.base.check
 
 -- load required funcitons
 local isString = lide.core.base.isstring
@@ -49,12 +49,20 @@ end
 
 function Numbersheet:writeText ( strCell, strText, objFormat )
 	isString(strCell) isString(strText)	
+	
+	if objFormat and isObject(objFormat) then 
+		objFormat = objFormat:getCobj()
+	end
 
 	self.Cobj:write_string(strCell, strText, objFormat)
 end
 
 -- set_column(first_col, last_col, width, format, options)
 function Numbersheet:setColWidth( first_col, last_col, width, format, options )
+	if format and isObject(format) then
+		format = format:getCobj()
+	end
+
 	self.Cobj:set_column(first_col , last_col , width, format, options)
 end
 
@@ -65,7 +73,9 @@ end
 -- merge_range(first_row, first_col, last_row, last_col, format)
 --- ("B3:D4", "Merged Cells", merge_format)
 function Numbersheet:mergeCells ( strCells, strText, oFormat )
-	self.Cobj:merge_range(strCells, strText, oFormat)
+	isString(strCells); isString(strText); isObject(oFormat);
+	
+	self.Cobj:merge_range(strCells, strText, oFormat:getCobj())
 end
 
 function Numbersheet:getCobj( )
@@ -110,17 +120,7 @@ end
 
 --[table *format] workbook:add_format(table [properties])
 function Numberbook:newFormat ( fields )
-	
-	local format = self.Cobj:add_format {
-		bold = fields.Bold or nil,
-		font_size = fields.FontSize or nil,
-		font_name = fields.FontName or nil,
-		align     = fields.Align or nil,
-	}
-
-	format:set_font_name ( fields.FontName or nil )
-	
-	return format
+	return require 'numberbook.cellformat' : new ( self, fields )
 end
 
 -- worksheet workbook:add_worksheet([sheetname])
