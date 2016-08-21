@@ -53,9 +53,21 @@ function Numbersheet:writeText ( strCell, strText, objFormat )
 	if objFormat and isObject(objFormat) then 
 		objFormat = objFormat:getCobj()
 	end
-
+	--- write_string(row, col, string[, format])
 	self.Cobj:write_string(strCell, strText, objFormat)
 end
+
+function Numbersheet:writeNumber ( strCell, number, objFormat )
+	isString(strCell); isNumber(number);
+	
+	if objFormat and isObject(objFormat) then 
+		objFormat = objFormat:getCobj()
+	end
+
+	--- write_number(row, col, number[, format])
+	self.Cobj:write_number(strCell, number, objFormat)
+end
+
 
 -- set_column(first_col, last_col, width, format, options)
 function Numbersheet:setColWidth( first_col, last_col, width, format, options )

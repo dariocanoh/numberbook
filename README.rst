@@ -14,6 +14,7 @@ Instalación
 ===========
 
 .. code-block:: bash
+	
 	$ mkdir lide_app && cd lide_app
 	$ git clone https://github.com/dariocanoh/numberbook.git
 	$ lide -l numberbook main.lua
@@ -25,7 +26,7 @@ Numberbook
 Constructor de libros de cálculo desde Lua.
 
 =======================  =================================================================================
-  Métodos de la clase      Des#D5D5D5cripción
+  Métodos de la clase      Descripción
 =======================  =================================================================================
  Numberbook:newFormat_    Crea un nuevo formato
  Numberbook:addSheet_     Agrega una hoja al libro

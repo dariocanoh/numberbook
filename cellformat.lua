@@ -144,6 +144,11 @@ function CellFormat:setRight( nBorderStyle)
 	self.Cobj:set_right(nBorderStyle)
 end
 
+function CellFormat:setNumberFormat( sFormatString )
+	isString(sFormatString);
+	self.Cobj:set_num_format(sFormatString);
+end
+
 --[[local Arial_10 = CellFormat:new { FontName = 'Arial', FontSize = 10 }
 
 Arial_10:setFontName 'Arial'
