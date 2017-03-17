@@ -53,7 +53,7 @@ local zlib
 if lide.platform.getOSName() == 'Linux' then
    zlib = package.loadlib ('numberbook/deps/zlib.so' , 'luaopen_zlib') ()
 elseif lide.platform.getOSName() == 'Windows' then
-   zlib = package.loadlib ('numberbook/deps/zlib.dll', 'luaopen_zlib') ()
+   zlib = require 'zlib' -- lidesdk/repos/stable/zlib
 end
 
 local utils            = require "numberbook.deps.ZipWriter.utils"
