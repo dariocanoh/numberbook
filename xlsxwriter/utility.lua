@@ -175,12 +175,21 @@ function Utility.warn(...)
 
   -- Print warning to stderr at the calling program stack level.
   info = debug.getinfo(level -1, "Sl")
+--< HEAD
 --  if info then
 --  io.stderr:write(string.format("Warning:\n\t%s:%d: ",
 --                                info.short_src,
 --                                info.currentline))
 --  io.stderr:write(string.format(...))
 --end
+--=======
+  
+  --io.stderr:write(string.format("Warning:\n\t%s:%d: ",
+  --                              info.short_src,
+  --                              info.currentline))
+  --io.stderr:write(string.format(...))
+
+--> master
 end
 
 ----

@@ -48,13 +48,16 @@
 -- -- as before
 --
 
-local zlib
+--====================================================================--
+--== Load lide packages:
+--====================================================================--
+-- $ lide install zlib
 
-if lide.platform.getOSName() == 'Linux' then
-   zlib = package.loadlib ('numberbook/deps/zlib.so' , 'luaopen_zlib') ()
-elseif lide.platform.getOSName() == 'Windows' then
-   zlib = require 'zlib' -- lidesdk/repos/stable/zlib
-end
+local zlib = require 'zlib'
+
+--====================================================================--
+--== load modules
+--====================================================================--
 
 local utils            = require "numberbook.deps.ZipWriter.utils"
 local stream_converter = require "numberbook.deps.ZipWriter.binary_converter"

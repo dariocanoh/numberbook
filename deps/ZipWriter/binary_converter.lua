@@ -1,12 +1,13 @@
 local string = require "string"
 
 local struct_unpack, struct_pack, struct_size
+
 if string.pack then
-  struct_unpack, struct_pack, struct_size = assert(string.unpack), assert(string.pack)
+   struct_unpack, struct_pack, struct_size = assert(string.unpack), assert(string.pack)
 else
- local struct = require 'struct'
+   local struct = require 'struct'
    
-  struct_unpack, struct_pack, struct_size = assert(struct.unpack), assert(struct.pack), assert(struct.size)
+   struct_unpack, struct_pack, struct_size = assert(struct.unpack), assert(struct.pack), assert(struct.size)
 end
 
 local string_byte, string_char, string_gsub = string.byte, string.char, string.gsub
@@ -16,8 +17,8 @@ local pairs,assert,setmetatable = pairs,assert,setmetatable
 
 local unpack = unpack or table.unpack
 local math_mod = function(...) 
-  local a,b = math.modf(...)
-  return b
+   local a,b = math.modf(...)
+   return b
 end
 
 local converter_t = {
