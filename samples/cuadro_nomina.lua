@@ -2,11 +2,11 @@
 -- 
 --
 
-package.path = './?/init.lua;' .. package.path
+package.path = ';?.lua;?/init.lua;'
 
 Numberbook = require 'numberbook'
 
-report = Numberbook:new { Name = 'report', Filename ='./report.xlsx' }
+report = Numberbook:new { Name = 'report', Filename ='D:\\dcanoh\\proyectos\\lnomina\\numberbook\\samples\\reporte.xlsx' }
 
 sheet1 = report:addSheet 'sheet1';
 
@@ -107,6 +107,6 @@ sheet1:writeText('O8', '012', format3)
 sheet1:writeText('P8', '050', format3)
 sheet1:writeText('Q8', '020', format3)
 
-os.execute 'rm ./report.xlsx'
+--os.execute 'rm ./report.xlsx'
 
 report:close()

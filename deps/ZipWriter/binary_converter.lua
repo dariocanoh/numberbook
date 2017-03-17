@@ -9,7 +9,10 @@ else
    if lide.platform.getOSName() == 'Linux' then
      struct = package.loadlib ("numberbook/deps/struct.so", 'luaopen_struct')()
     elseif lide.platform.getOSName() == 'Windows' then
-      struct = package.loadlib ("numberbook/deps/struct.dll", 'luaopen_struct')()
+      --struct = package.loadlib ('D:\\dcanoh\\proyectos\\numberbook\\deps\\struct.dll', 'luaopen_struct') ()
+      package.cpath = package.cpath .. ';D:\\dcanoh\\proyectos\\numberbook\\deps\\?.dll;'
+      struct = require 'struct'
+      --struct = package.loadlib ("D:\\dcanoh\\proyectos\\numberbook\\deps\\struct.dll", 'luaopen_struct')()
     end
   struct_unpack, struct_pack, struct_size = assert(struct.unpack), assert(struct.pack), assert(struct.size)
 end
