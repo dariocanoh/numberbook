@@ -9,7 +9,7 @@
 -- (even assigning nil will do) in a main chunk before being used
 -- anywhere or assigned to inside a function.
 --
-
+--[[
 local getinfo, error, rawset, rawget = debug.getinfo, error, rawset, rawget
 
 local mt = getmetatable(_G)
@@ -46,3 +46,4 @@ mt.__index = function (t, n)
   end
   return rawget(t, n)
 end
+]]
